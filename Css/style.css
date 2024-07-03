@@ -50,7 +50,7 @@ li {
 
 /* theme */
 :root {
-    --main-color: #0062ff;
+    --main-color: #0de9df;
     --supporting-color: #ebf3fe;
     --font-color: #424242;
     /* --bg-color: #ffffff; */
@@ -59,7 +59,7 @@ li {
     --hero-heading-color: #003b99;
     --white-color: #ffffff;
     --para-color: #504e4d;
-    --bnt-hover-bg-color: #003b99;
+    --bnt-hover-bg-color: #0eb7af;
     --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --footer-bg-color: #040d12;
 }
@@ -76,14 +76,39 @@ li {
 }
 
 
+.grid {
+    display: grid;
+}
+
+.grid-two--cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 
 
 /* module-reusable */
+
+.btn {
+    padding: 1.2rem 3.2rem;
+    background-color: var(--main-color);
+    display: inline-block;
+    color: var(--white-color);
+    border-radius: .6rem;
+}
+
 
 
 
 
 /* states */
+
+.btn:hover {
+    background-color: var(--bnt-hover-bg-color);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+}
+
+
 
 
 
@@ -115,24 +140,64 @@ li {
         display: inline-block;
         font-size: 1.6rem;
         position: relative;
+
         &::after {
             content: "";
             position: absolute;
             bottom: -.3rem;
             left: 0;
-            width:0%;
+            width: 0%;
             border-bottom: .2rem solid var(--main-color);
             transition: all linear 0.3s;
         }
     }
 
-    
-    & li a:hover:after{
-        width:100%;
+
+    & li a:hover:after {
+        width: 100%;
     }
 }
 
 
-
-
 /* ---------End navbar section------- */
+
+
+/***** Hero-Section *****/
+
+main {
+    background-image: linear-gradient(to top right,
+            #12bab2,
+            #1ed6cd,
+            #5aede6,
+            #95f0eb,
+            #ebf3fe);
+}
+
+
+.section-hero .grid {
+    align-items: center;
+    gap: 6.4rem;
+
+    & .hero-subheading{
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.7rem;
+        word-spacing: .2rem;
+        color:var(--bnt-hover-bg-color);
+    }
+
+    & .hero-heading{
+        font-size: 5.8rem;
+        /* line-height: 5.5rem; */
+        font-family: "Urbanist", sans-serif;
+        color:var(--hero-heading-color);
+    }
+}
+
+.section-hero--image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/***** End Hero-Section *****/
