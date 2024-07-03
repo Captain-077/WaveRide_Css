@@ -85,6 +85,10 @@ li {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-three--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 
 
 /* module-reusable */
@@ -98,7 +102,20 @@ li {
 }
 
 
+.section-common-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
 
+.section-common-subheading {
+    color: var(--heading-color);
+}
+
+.section-common--title{
+    font-size: 2rem;
+    margin:3rem 0 1.5rem 0;
+}
 
 
 /* states */
@@ -186,7 +203,7 @@ main {
             #f4f1f1,
             #f4f1f1);
 
-            position: relative;
+    position: relative;
 }
 
 
@@ -221,7 +238,7 @@ main {
     height: auto;
 }
 
-/***** waves *****/ 
+/***** waves *****/
 
 .custom-shape-divider-bottom-1720021813 {
     position: absolute;
@@ -244,9 +261,48 @@ main {
 .custom-shape-divider-bottom-1720021813 .shape-fill {
     fill: #FFFFFF;
 }
+
 /***** End waves *****/
 
 
 
 
 /***** End Hero-Section *****/
+
+
+
+
+
+/***** About Section *****/  
+
+
+.section-about .about-div{
+    text-align: center;
+}
+
+.section-about .grid{
+    gap:6.4rem;
+}
+
+.section-about img{
+    padding: 2.4rem;
+    background-color: var(--supporting-color);
+    width:15rem;
+    height: auto;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+}
+
+.about-div .icon > img:hover{
+    rotate: 360deg;
+}
+
+
+
+
+
+
+
+
+
+/***** End About Section *****/
