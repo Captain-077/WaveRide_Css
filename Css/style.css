@@ -89,6 +89,10 @@ li {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 
 
 /* module-reusable */
@@ -115,6 +119,7 @@ li {
 .section-common--title{
     font-size: 2rem;
     margin:3rem 0 1.5rem 0;
+    font-weight: 600;
 }
 
 
@@ -275,7 +280,6 @@ main {
 
 /***** About Section *****/  
 
-
 .section-about .about-div{
     text-align: center;
 }
@@ -284,12 +288,19 @@ main {
     gap:6.4rem;
 }
 
-.section-about img{
-    padding: 2.4rem;
+.section-about .icon{
     background-color: var(--supporting-color);
     width:15rem;
     height: auto;
     border-radius: 50%;
+    margin:0 auto;
+
+}
+
+.section-about img{
+    padding: 2.4rem;
+    width:15rem;
+    height: auto;
     transition: all linear 0.3s;
 }
 
@@ -297,12 +308,29 @@ main {
     rotate: 360deg;
 }
 
-
-
-
-
-
-
-
-
 /***** End About Section *****/
+
+
+
+
+
+
+/***** services Section *****/
+.section-services .service-div{
+    /* text-align: center; */
+    padding: 3.2rem;
+    transition: box-shadow linear .3s;
+    border-radius: 10px;
+}
+
+
+.section-services .grid{
+    gap:3.2rem;
+}
+
+
+.section-services .service-div:hover{
+    box-shadow: var(--btn-box-shadow)
+}
+
+/***** End services Section *****/
