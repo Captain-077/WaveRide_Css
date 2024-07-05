@@ -393,7 +393,7 @@ main {
     /* z-index: 0; */
     background-color: #3381ff;
     z-index: -1;
-   
+
 }
 
 .learn-center--div figure::after {
@@ -404,8 +404,8 @@ main {
     border: 0.5rem solid var(--supporting-color);
 }
 
-.learn-center--div figure::before{
-    animation:circle 5s linear infinite;
+.learn-center--div figure::before {
+    animation: circle 5s linear infinite;
 }
 
 .learn-center--div img {
@@ -413,23 +413,71 @@ main {
     height: auto;
 }
 
-@keyframes circle{
-        0% {
-          background-color: #b3d0ff;
-        }
-        25% {
-          background-color: #80b1ff;
-        }
-        50% {
-          background-color: #4d91ff;
-        }
-        75% {
-          background-color: #99c0ff;
-        }
-        100% {
-          background-color: #3381ff;
-        }
-      
+@keyframes circle {
+    0% {
+        background-color: #b3d0ff;
+    }
+
+    25% {
+        background-color: #80b1ff;
+    }
+
+    50% {
+        background-color: #4d91ff;
+    }
+
+    75% {
+        background-color: #99c0ff;
+    }
+
+    100% {
+        background-color: #3381ff;
+    }
+
 }
 
 /***** End Learn Section *****/
+
+
+
+/***** contact-home Section *****/
+
+
+
+.section-contact-homepage {
+    width: 60%;
+    min-height: 30rem;
+    margin: 0 auto;
+    box-shadow: var(--btn-box-shadow);
+    margin-bottom: 5rem;
+    border-radius: 02rem;
+
+    & .grid{
+        align-items: center;
+       
+    }
+}
+
+.contact-title{
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+
+.contact-content p{
+    margin: 1.2rem 0 2.4rem 0;
+}
+
+.section-contact-homepage img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/***** End contact-home Section *****/
