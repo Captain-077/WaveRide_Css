@@ -60,7 +60,7 @@ li {
     --hero-heading-color: #003b99;
     --white-color: #ffffff;
     --para-color: #504e4d;
-    --bnt-hover-bg-color: #47acd1;
+    --bnt-hover-bg-color: #1050b7;
     --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --footer-bg-color: #040d12;
 }
@@ -76,6 +76,13 @@ li {
     padding: 9.6rem 2.4rem;
 }
 
+.section-learn .container:first-child{
+    padding: 6.4rem 0 2.4rem 0;
+}
+.section-about  .container:first-child,
+.section-services  .container:first-child{   
+    padding: 6.4rem 0 2.4rem 0;
+}
 
 .grid {
     display: grid;
@@ -99,7 +106,7 @@ li {
 
 .btn {
     padding: 1.2rem 3.2rem;
-    background-color: var(--main-color);
+    background-color: var(--hero-heading-color);
     display: inline-block;
     color: var(--white-color);
     border-radius: .6rem;
@@ -316,6 +323,10 @@ main {
 
 
 /***** services Section *****/
+
+.section-services{
+    background-color: var(--bg-color);
+}
 .section-services .service-div {
     /* text-align: center; */
     padding: 3.2rem;
@@ -445,17 +456,25 @@ main {
 
 
 .section-contact-homepage {
-    width: 60%;
+    width: 50%;
     min-height: 30rem;
     margin: 0 auto;
     box-shadow: var(--btn-box-shadow);
     margin-bottom: 5rem;
     border-radius: 02rem;
+    padding: 0 3.2rem;
+    position: relative;
+    bottom: -20rem;
+    background-color: var(--white-color);
 
     & .grid{
-        align-items: center;
-       
+        align-items: center;   
     }
+}
+
+.section-contact-homepage .container{
+    padding: 3.2rem 0;
+    margin:auto;
 }
 
 .contact-title{
@@ -467,6 +486,11 @@ main {
     margin: 1.2rem 0 2.4rem 0;
 }
 
+.contact-image{
+    display: flex;
+    justify-content: end;
+}
+
 .section-contact-homepage img {
     width: 80%;
     height: auto;
@@ -475,9 +499,51 @@ main {
 }
 
 
+.section-contact-homepage a{
+    color:var(--white-color);
+}
 
-
-
+.section-contact-homepage .btn{
+    background-color: #4d7881;
+}
+/* .section-contact-homepage .btn .fa-solid{
+    color: #fece79;
+    background-color: var(--);
+} */
+.section-contact-homepage .btn:hover{
+    background-color: #2e3e57;
+}
 
 
 /***** End contact-home Section *****/
+
+
+
+
+
+
+
+
+/***** footer Section *****/  
+footer{
+    background-color: var(--footer-bg-color);
+    padding-top:15rem;
+}
+
+
+
+footer *{
+    color: var(--white-color);
+}
+
+
+.footer-subheading{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.footer-1--div p{
+margin: 1rem 0 3rem 0;
+}
+
+/***** End footer Section *****/
