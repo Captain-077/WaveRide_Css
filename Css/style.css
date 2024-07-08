@@ -677,6 +677,16 @@ textarea {
     font-size: 1.6rem;
     letter-spacing: 0.1rem;
 }
+
+input:focus-visible {
+    outline: 1px solid var(--main-color);
+}
+
+textarea:focus-visible {
+    outline: 1px solid var(--main-color);
+}
+
+
 .contact-content .grid {
     gap: 6.4rem;
 }
@@ -695,3 +705,29 @@ textarea {
 
 
 /***** End contact page Section *****/
+
+
+
+
+
+
+
+
+
+/***** media queries *****/
+@media (width <= 1380px) {
+
+    html{
+        font-size: 56.25%;
+    }
+
+    .section-hero img{
+        width: 90%;
+    }
+    
+}
+
+
+
+
+/***** End media queries *****/
